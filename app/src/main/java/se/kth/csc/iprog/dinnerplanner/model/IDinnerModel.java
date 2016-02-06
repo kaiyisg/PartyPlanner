@@ -2,7 +2,7 @@ package se.kth.csc.iprog.dinnerplanner.model;
 
 import java.util.Set;
 
-public interface IDinnerModel {
+public interface IDinnerModel{
 
 	public int getNumberOfGuests();
 	public void setNumberOfGuests(int numberOfGuests);
