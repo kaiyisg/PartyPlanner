@@ -52,13 +52,17 @@ public class DinnerModel implements IDinnerModel{
 		dish2.addIngredient(dish2ing11);
 		dishes.add(dish2);
 
+		this.guests = 0;
 	}
 
 	/**
-	 * Returns the set of dishes
+	 * The constructor of the overall model. Set the default values here
 	 */
-	public Set<Dish> getDishes(){
-		return dishes;
+	public DinnerModel(int numberOfGuests, Set<Dish> currentDishes){
+		this.guests = numberOfGuests;
+		while(currentDishes.iterator().hasNext()){
+			this.dishes.add(currentDishes.iterator().next());
+		}
 	}
 
 	/**

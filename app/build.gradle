@@ -17,8 +17,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { java.srcDirs = ['src/main/java', 'src/test/java/'] } }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Required -- JUnit 4 framework
+    testCompile 'junit:junit:4.12'
+    // Set this dependency if you want to use the Hamcrest matcher library
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
 }
