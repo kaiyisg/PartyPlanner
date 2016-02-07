@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_page_id">
+
+    <EditText
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_gravity="center_vertical"
+        android:hint="@string/username"
+        style="@style/CodeFont"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="@string/password"
+        style="@style/CodeFont"
+        android:gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.35" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/party_planner_question"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        style="@style/CodeFont" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:id="@+id/button"
+        style="@style/CodeFont" />
+
+</LinearLayout>

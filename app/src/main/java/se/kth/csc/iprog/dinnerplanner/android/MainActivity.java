@@ -2,10 +2,7 @@ package se.kth.csc.iprog.dinnerplanner.android;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
-import se.kth.csc.iprog.dinnerplanner.android.view.ExampleView;
+import se.kth.csc.iprog.dinnerplanner.android.view.LoginPage;
 
 
 public class MainActivity extends Activity {
@@ -19,8 +16,8 @@ public class MainActivity extends Activity {
         // it must come before any call to findViewById method
         setContentView(R.layout.activity_main);
 
-        // Creating the view class instance
-        ExampleView mainView = new ExampleView(findViewById(R.id.this_is_example_view_id));
+        // Creating the view class instance - only needed for views which require programming
+        LoginPage mainView = new LoginPage(findViewById(R.id.login_page_id));
     }
 
 }

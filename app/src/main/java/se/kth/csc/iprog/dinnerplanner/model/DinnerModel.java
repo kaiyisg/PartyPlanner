@@ -6,7 +6,8 @@ import java.util.Set;
 public class DinnerModel implements IDinnerModel{
 
 	private int guests;
-	private Set<Dish> dishes = new HashSet<Dish>();
+	//total repository of dishes
+	private static Set<Dish> dishes = new HashSet<Dish>();
 	private Set<Dish> fullMenu = new HashSet<Dish>();
 
 	/**
@@ -53,6 +54,8 @@ public class DinnerModel implements IDinnerModel{
 		dish2.addIngredient(dish2ing11);
 		dishes.add(dish2);
 
+		//Dish dish3 = new Dish()
+
 		this.guests = 0;
 	}
 
@@ -62,12 +65,12 @@ public class DinnerModel implements IDinnerModel{
 	public DinnerModel(int numberOfGuests, Set<Dish> currentDishes){
 		this.guests = numberOfGuests;
 		while(currentDishes.iterator().hasNext()){
-			this.dishes.add(currentDishes.iterator().next());
+			dishes.add(currentDishes.iterator().next());
 		}
 	}
 
-	public Set<Dish> getAllDishes(){
-		return this.dishes;
+	public static Set<Dish> getAllDishes(){
+		return dishes;
 	}
 
 	/**
