@@ -7,6 +7,7 @@ public class DinnerModel implements IDinnerModel{
 
 	private int guests;
 	private Set<Dish> dishes = new HashSet<Dish>();
+	private Set<Dish> fullMenu = new HashSet<Dish>();
 
 	/**
 	 * The constructor of the overall model. Set the default values here
@@ -65,6 +66,10 @@ public class DinnerModel implements IDinnerModel{
 		}
 	}
 
+	public Set<Dish> getAllDishes(){
+		return this.dishes;
+	}
+
 	/**
 	 * Returns the set of dishes of specific type. (1 = starter, 2 = main, 3 = desert).
 	 */
@@ -105,7 +110,7 @@ public class DinnerModel implements IDinnerModel{
 	 * returns null if there are no dishes on the menu for the selected type
 	 */
 	public Dish getSelectedDish(int type){
-		while(dishes.iterator().hasNext()){
+		while(fullMenu.iterator().hasNext()){
 			Dish currentDish = dishes.iterator().next();
 			if(currentDish.getType()==type){
 				return currentDish;
@@ -118,7 +123,11 @@ public class DinnerModel implements IDinnerModel{
 	 * Returns all the dishes on the menu.
 	 */
 	public Set<Dish> getFullMenu(){
-		return dishes;
+		return fullMenu;
+	}
+
+	public void setFullMenu(Set<Dish> newFullMenu){
+		this.fullMenu = newFullMenu;
 	}
 
 	/**
@@ -126,8 +135,8 @@ public class DinnerModel implements IDinnerModel{
 	 */
 	public Set<Ingredient> getAllIngredients(){
 		Set<Ingredient> allIngredients = new HashSet<Ingredient>();
-		while(dishes.iterator().hasNext()){
-			Set<Ingredient> currentDishIngredients = dishes.iterator().next().getIngredients();
+		while(fullMenu.iterator().hasNext()){
+			Set<Ingredient> currentDishIngredients = fullMenu.iterator().next().getIngredients();
 			allIngredients.addAll(currentDishIngredients);
 		}
 		return allIngredients;
@@ -150,23 +159,23 @@ public class DinnerModel implements IDinnerModel{
 	 * it is removed from the menu and the new one added.
 	 */
 	public void addDishToMenu(Dish dish){
-		while(dishes.iterator().hasNext()){
-			Dish currentDish = dishes.iterator().next();
+		while(fullMenu.iterator().hasNext()){
+			Dish currentDish = fullMenu.iterator().next();
 			if(currentDish.getType()==dish.getType()){
-				dishes.iterator().remove();
+				fullMenu.iterator().remove();
 			}
 		}
-		dishes.add(dish);
+		fullMenu.add(dish);
 	}
 
 	/**
 	 * Remove dish from menu
 	 */
 	public void removeDishFromMenu(Dish dish){
-		while(dishes.iterator().hasNext()){
-			Dish currentDish = dishes.iterator().next();
+		while(fullMenu.iterator().hasNext()){
+			Dish currentDish = fullMenu.iterator().next();
 			if(currentDish.getType()==dish.getType()){
-				dishes.iterator().remove();
+				fullMenu.iterator().remove();
 			}
 		}
 	}
