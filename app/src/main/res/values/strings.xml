@@ -13,6 +13,14 @@
     <string name="party_planner_question">Not yet a party planner?</string>
     <string name="sign_up">Sign up!!</string>
 
+    <!--
+    strings for settings_page
+      -->
+    <string name="name">Name: </string>
+    <string name="nick">Nick</string>
+    <string name="change_user">Change Username / Password</string>
+    <string name="delete_parties">Delete Parties</string>
+
 
 
 </resources>

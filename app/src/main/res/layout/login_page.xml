@@ -11,7 +11,9 @@
         android:layout_gravity="center_vertical"
         android:hint="@string/username"
         style="@style/CodeFont"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="198dp"
@@ -21,29 +23,32 @@
         android:id="@+id/editText2"
         android:hint="@string/password"
         style="@style/CodeFont"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_marginLeft="20dp" />
 
-    <ScrollView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="107dp"
-        android:id="@+id/scrollView"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.35" />
+        android:src="@drawable/birthday_cake_icon"
+        android:layout_weight="0.02" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/party_planner_question"
         android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03"
-        style="@style/CodeFont" />
+        android:layout_weight="0.01"
+        style="@style/CodeFont"
+        android:gravity="center" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:id="@+id/button"
-        style="@style/CodeFont" />
+        style="@style/CodeFont"
+        android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
