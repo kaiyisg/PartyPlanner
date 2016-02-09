@@ -21,6 +21,59 @@
     <string name="change_user">Change Username / Password</string>
     <string name="delete_parties">Delete Parties</string>
 
+    <!--
+    strings for menu_page
+      -->
+    <string name="dish_editor">Dish Editor</string>
+    <string name="menu_editor">Menu Editor</string>
 
+    <!--
+    strings for dish_editor_page
+      -->
+    <string name="current_dishes">Current Dishes</string>
+    <string name="button_add">Add Dish</string>
+    <string name="button_edit">Edit Dish</string>
+    <string name="button_delete">Del Dish</string>
+
+    <!--
+    strings for dish_editor_page
+        -->
+    <string name="adding_dishes">New Dish Entry</string>
+    <string name="new_dish_name">New Dish Name</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="quantity">Quantity</string>
+    <string name="cost">Cost</string>
+
+    <!--
+    strings for dish_editor_page
+        -->
+    <string name="add_new_instruction">Add a new instruction...</string>
+    <string name="add_new_recipe">Add new recipe!</string>
+    <string name="go_to_instructions">Start adding instructions</string>
+
+
+    <!--
+    strings for menu_editor_page
+        -->
+    <string name="menu_editor_page">Menu Editor Page</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_edit">Edit</string>
+
+    <!--
+    strings for menu_editor2_page
+    -->
+    <string name="menu_adding_new">Add a new menu</string>
+    <string name="menu_adding_name">Name of new menu</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="starters">Starters</string>
+    <string name="mains">Mains</string>
+    <string name="desserts">Desserts</string>
+    <string name="save_menu">Save Menu</string>
+
+    <!--
+    strings for party_main_page
+    -->
+    <string name="select_or_create_party">Select or create a new party</string>
 
 </resources>
