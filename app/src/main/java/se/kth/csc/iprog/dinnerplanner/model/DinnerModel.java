@@ -6,8 +6,15 @@ import java.util.Set;
 public class DinnerModel implements IDinnerModel{
 
 	private int guests;
+
 	//total repository of dishes
 	private static Set<Dish> dishes = new HashSet<Dish>();
+
+	//total repository of all menus
+	private static Set<Menus> allMenus = new HashSet<Menus>();
+
+	//current full menu of the current party
+	//// TODO: 17-Feb-16 might consider changing the implementation of this to use the menu class
 	private Set<Dish> fullMenu = new HashSet<Dish>();
 
 	/**
@@ -54,7 +61,19 @@ public class DinnerModel implements IDinnerModel{
 		dish2.addIngredient(dish2ing11);
 		dishes.add(dish2);
 
-		//Dish dish3 = new Dish()
+		Dish dish3 = new Dish("Pudding", Dish.DESERT, "pudding.jpg", "Add in the ready made pudding paste to water, milk and let it cool. Refridgerate and serve cold");
+		Ingredient dish3ing1 = new Ingredient("pudding paste", 30, "g", 2);
+		Ingredient dish3ing2 = new Ingredient("milk", 150, "ml", 3);
+		dish3.addIngredient(dish3ing1);
+		dish3.addIngredient(dish3ing2);
+		dishes.add(dish3);
+
+		//adding first menu
+		allMenus.add(new Menus(dish1,dish2,dish3));
+
+
+		Dish dish4 = new Dish("Indian Yoghurt Dip", Dish.STARTER, "indianyoghurtdip.jpg", "Mix 1 cup Greek yogurt with 2 tablespoons each chopped cilantro and tomato, 1 tablespoon minced shallot, 1/2 teaspoon each grated ginger and garlic, and salt to taste. Serve with crackers or pita chips.");
+		
 
 		this.guests = 0;
 	}

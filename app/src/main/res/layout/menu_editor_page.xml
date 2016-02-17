@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:id="@+id/menu_editor_id">
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +54,8 @@
             android:id="@+id/button11"
             android:layout_gravity="center_horizontal"
             android:layout_margin="29dp"
-            android:gravity="center_vertical" />
+            android:gravity="center_vertical"
+            android:layout_weight="0.38" />
 
         <Button
             android:layout_width="wrap_content"
@@ -62,7 +64,8 @@
             android:id="@+id/button13"
             android:layout_margin="29dp"
             android:gravity="center_vertical"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.27" />
     </LinearLayout>
 
     <Button
