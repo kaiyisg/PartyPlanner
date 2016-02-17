@@ -22,7 +22,7 @@ public class DinnerModel implements IDinnerModel{
 	 */
 	public DinnerModel(){
 
-		//Adding some example data, you can add more
+		//This is the Standard Western Menu
 		Dish dish1 = new Dish("French toast",Dish.STARTER,"toast.jpg","In a large mixing bowl, beat the eggs. Add the milk, brown sugar and nutmeg; stir well to combine. Soak bread slices in the egg mixture until saturated. Heat a lightly oiled griddle or frying pan over medium high heat. Brown slices on both sides, sprinkle with cinnamon and serve hot.");
 		Ingredient dish1ing1 = new Ingredient("eggs",0.5,"",1);
 		Ingredient dish1ing2 = new Ingredient("milk",30,"ml",6);
@@ -71,9 +71,81 @@ public class DinnerModel implements IDinnerModel{
 		//adding first menu
 		allMenus.add(new Menus(dish1,dish2,dish3));
 
-
+		//This is the Pan-Asian delicacy menu
 		Dish dish4 = new Dish("Indian Yoghurt Dip", Dish.STARTER, "indianyoghurtdip.jpg", "Mix 1 cup Greek yogurt with 2 tablespoons each chopped cilantro and tomato, 1 tablespoon minced shallot, 1/2 teaspoon each grated ginger and garlic, and salt to taste. Serve with crackers or pita chips.");
-		
+		Ingredient dish4ing1 = new Ingredient("Greek Yoghurt", 300, "ml", 6);
+		Ingredient dish4ing2 = new Ingredient("salt",0.7,"g",3);
+		Ingredient dish4ing3 = new Ingredient("shallot",0.25,"",2);
+		Ingredient dish4ing4 = new Ingredient("garlic",0.6,"g",3);
+		dish4.addIngredient(dish4ing1);
+		dish4.addIngredient(dish4ing2);
+		dish4.addIngredient(dish4ing3);
+		dish4.addIngredient(dish4ing4);
+		dishes.add(dish4);
+
+		Dish dish5 = new Dish("Fried Fish", Dish.MAIN, "friedfish.jpg", "Mix together the flour and the beer, then fold in the egg whites. Turn up the heat of the oil to 350 degrees F (180 degrees C). Dip the fish in the batter and fry for a few minutes with until golden brown.");
+		Ingredient dish5ing1 = new Ingredient("Flour", 200, "g", 4);
+		Ingredient dish5ing2 = new Ingredient("Egg",2,"",3);
+		Ingredient dish5ing3 = new Ingredient("Beer",1,"can",6);
+		Ingredient dish5ing4 = new Ingredient("White Fish",300,"g",30);
+		dish5.addIngredient(dish5ing1);
+		dish5.addIngredient(dish5ing2);
+		dish5.addIngredient(dish5ing3);
+		dish5.addIngredient(dish5ing4);
+		dishes.add(dish5);
+
+		Dish dish6 = new Dish("Soya Milk Pudding", Dish.DESERT, "soyamilkpudding.jpg", "Place 1 1/2 cups soy milk in medium saucepan. Sprinkle gelatin over top and let sit 5 minutes to allow gelatin to soften. Heat soy milk over medium heat, stirring, just until gelatin dissolves (do not boil soy milk). Stir in remaining 1 1/2 cups soy milk and vanilla. Sweeten to taste. Pour into serving bowls and chill until set and very cold, 3 to 4 hours.");
+		Ingredient dish6ing1 = new Ingredient("Soya Milk", 400, "ml", 20);
+		Ingredient dish6ing2 = new Ingredient("Gelatin",30,"g",3);
+		Ingredient dish6ing3 = new Ingredient("Sugar",50,"g",3);
+		Ingredient dish6ing4 = new Ingredient("Vanilla Extract",10,"ml",1);
+		dish6.addIngredient(dish6ing1);
+		dish6.addIngredient(dish6ing2);
+		dish6.addIngredient(dish6ing3);
+		dish6.addIngredient(dish6ing4);
+		dishes.add(dish6);
+
+		//this is the Friendly Vegetarian Menu
+		Dish dish7 = new Dish("Baked Tortilla Chips", Dish.STARTER, "bakedtortillachips","Preheat oven to 180 C. Cut each tortilla into 8 triangular wedges and arrange in a single layer on a baking tray.In a mister or spray bottle, combine the oil and lime juice. Mix well and spray each tortilla wedge until slightly moist. Combine the cumin, chilli powder and salt in a small bowl and sprinkle on the wedges. Bake for about 7 minutes. Rotate the tray and bake for another 8 minutes or until the wedges are crisp, but not too brown. Serve warm or room temperature with salsas, dips or guacamole.");
+		Ingredient dish7ing1 = new Ingredient("flour tortillas", 200, "g", 20);
+		Ingredient dish7ing2 = new Ingredient("lime juice",10,"ml",3);
+		Ingredient dish7ing3 = new Ingredient("cumin",1,"teaspoon",3);
+		Ingredient dish7ing4 = new Ingredient("chilli powder",1,"teaspoon",3);
+		Ingredient dish7ing5 = new Ingredient("salt",1,"teaspoon",3);
+		dish7.addIngredient(dish7ing1);
+		dish7.addIngredient(dish7ing2);
+		dish7.addIngredient(dish7ing3);
+		dish7.addIngredient(dish7ing4);
+		dish7.addIngredient(dish7ing5);
+		dishes.add(dish7);
+
+		Dish dish8 = new Dish("Fried Rice", Dish.MAIN, "friedrice.jpg", "Preheat a large skillet or wok to medium heat. Pour sesame oil in the bottom. Add white onion and peas and carrots and fry until tender. Slide the onion, peas and carrots to the side, and pour the beaten eggs onto the other side. Using a spatula, scramble the eggs. Once cooked, mix the eggs with the vegetable mix. Add the rice to the veggie and egg mixture. Pour the soy sauce on top. Stir and fry the rice and veggie mixture until heated through and combined. Add chopped green onions if desired.");
+		Ingredient dish8ing1 = new Ingredient("Rice", 3, "cups", 25);
+		Ingredient dish8ing2 = new Ingredient("Sesame Oil",2,"tablespoons",5);
+		Ingredient dish8ing3 = new Ingredient("Onion",1,"",3);
+		Ingredient dish8ing4 = new Ingredient("Eggs",2,"",6);
+		Ingredient dish8ing5 = new Ingredient("Soya Sauce",3,"tablespoons",2);
+		Ingredient dish8ing6 = new Ingredient("Peas",50,"g",5);
+		Ingredient dish8ing7 = new Ingredient("Carrots",50,"g",5);
+		dish8.addIngredient(dish8ing1);
+		dish8.addIngredient(dish8ing2);
+		dish8.addIngredient(dish8ing3);
+		dish8.addIngredient(dish8ing4);
+		dish8.addIngredient(dish8ing5);
+		dish8.addIngredient(dish8ing6);
+		dish8.addIngredient(dish8ing7);
+		dishes.add(dish8);
+
+		Dish dish9 = new Dish("Stuffed Strawberries", Dish.DESERT, "stuffedstrawberries.jpg", "Cut the tops off of the strawberries and stand upright on the cut side. Make a cut 3/4 of the way down from the tip of the strawberry towards the bottom. Beat together the cream cheese, sugar, and liqueur until smooth in a mixer or a food processor. Place into a piping bag with a star tip. Pipe into each strawberry and arrange on a serving platter.");
+		Ingredient dish9ing1 = new Ingredient("Strawberries", 1, "pint", 30);
+		Ingredient dish9ing2 = new Ingredient("confectioners' sugar",50,"g",3);
+		Ingredient dish9ing3 = new Ingredient("Orange Flavored Liquer",2,"tablespoon",6);
+		Ingredient dish9ing4 = new Ingredient("Cream Cheese",1,"package",10);
+		dish9.addIngredient(dish9ing1);
+		dish9.addIngredient(dish9ing2);
+		dish9.addIngredient(dish9ing3);
+		dish9.addIngredient(dish9ing4);
+		dishes.add(dish9);
 
 		this.guests = 0;
 	}
