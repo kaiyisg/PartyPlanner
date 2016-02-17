@@ -17,6 +17,11 @@ public class DinnerModel implements IDinnerModel{
 	//// TODO: 17-Feb-16 might consider changing the implementation of this to use the menu class
 	private Set<Dish> fullMenu = new HashSet<Dish>();
 
+	//getter for all menus
+	public static Set<Menus> getAllMenus(){
+		return allMenus;
+	}
+
 	/**
 	 * The constructor of the overall model. Set the default values here
 	 */
@@ -69,7 +74,7 @@ public class DinnerModel implements IDinnerModel{
 		dishes.add(dish3);
 
 		//adding first menu
-		allMenus.add(new Menus(dish1,dish2,dish3));
+		allMenus.add(new Menus("Western",dish1,dish2,dish3));
 
 		//This is the Pan-Asian delicacy menu
 		Dish dish4 = new Dish("Indian Yoghurt Dip", Dish.STARTER, "indianyoghurtdip.jpg", "Mix 1 cup Greek yogurt with 2 tablespoons each chopped cilantro and tomato, 1 tablespoon minced shallot, 1/2 teaspoon each grated ginger and garlic, and salt to taste. Serve with crackers or pita chips.");
