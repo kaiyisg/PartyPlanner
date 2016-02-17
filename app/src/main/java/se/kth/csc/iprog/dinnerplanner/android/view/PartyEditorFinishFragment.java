@@ -13,12 +13,12 @@ import se.kth.csc.iprog.dinnerplanner.android.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link OneFragment.OnFragmentInteractionListener} interface
+ * {@link PartyEditorFinishFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link OneFragment#newInstance} factory method to
+ * Use the {@link PartyEditorFinishFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OneFragment extends Fragment {
+public class PartyEditorFinishFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +30,7 @@ public class OneFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public OneFragment() {
+    public PartyEditorFinishFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +40,11 @@ public class OneFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment OneFragment.
+     * @return A new instance of fragment PartyEditorFinishFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static OneFragment newInstance(String param1, String param2) {
-        OneFragment fragment = new OneFragment();
+    public static PartyEditorFinishFragment newInstance(String param1, String param2) {
+        PartyEditorFinishFragment fragment = new PartyEditorFinishFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +65,7 @@ public class OneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_one, container, false);
+        return inflater.inflate(R.layout.party_editor_finish_fragment, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

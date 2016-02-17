@@ -22,7 +22,7 @@
     <string name="delete_parties">Delete Parties</string>
 
     <!--
-    strings for menu_page
+    strings for food_editor_menu_page
       -->
     <string name="dish_editor">Dish Editor</string>
     <string name="menu_editor">Menu Editor</string>
@@ -61,7 +61,7 @@
     <string name="menu_edit">Edit</string>
 
     <!--
-    strings for menu_editor2_page
+    strings for menu_editor_page2
     -->
     <string name="menu_adding_new">Add a new menu</string>
     <string name="menu_adding_name">Name of new menu</string>
@@ -81,5 +81,10 @@
     <string name="one">One</string>
     <string name="two">Two</string>
     <string name="three">Three</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_main_food_editor">MainFoodEditorActivity</string>
+    <string name="title_activity_choosing_party">ChoosingPartyActivity</string>
+    <string name="title_activity_party_editor">PartyEditorActivity</string>
 
 </resources>

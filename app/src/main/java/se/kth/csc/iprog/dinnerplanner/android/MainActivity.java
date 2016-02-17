@@ -18,6 +18,9 @@ public class MainActivity extends Activity {
 
         // Creating the view class instance - only needed for views which require programming
         LoginPage mainView = new LoginPage(findViewById(R.id.login_page_id));
+
+        // Creating the view class instance
+        //ExampleView mainView = new ExampleView(findViewById(R.id.this_is_example_view_id));
     }
 
 }
